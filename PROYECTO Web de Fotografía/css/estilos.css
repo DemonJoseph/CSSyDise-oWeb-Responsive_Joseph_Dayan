@@ -1,5 +1,9 @@
+@font-face {
+  font-family: Dancing Script;
+}
 header{
   background: #5b7989;
+  width: 100%;
   border-radius: 10px 10px 0px 0px;
 }
 
@@ -9,5 +13,34 @@ h1{
 }
 
 nav{
+  width: 100%;
   text-align: right;
+}
+
+.caja1{
+  width: 100%;
+  display:block;
+  clear:both;
+}
+
+.cajaimgs{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+}
+
+.caja2{
+  background: #d5c75f;
+  width: 100%;
+  display:block;
+  float: left;
+
+}
+
+.caja3{
+  background: #d5c75f;
+  width: 100%;
+  display:block;
+  float: right;
+
 }
