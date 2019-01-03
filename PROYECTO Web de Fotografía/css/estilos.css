@@ -1,46 +1,48 @@
+/*/////////////////////////////TIPO DE LETRA PARA EL PROYECTO*/
 @font-face {
-  font-family: Dancing Script;
+  font-family: 'Dancing Script', cursive;
 }
+
+/*/////////////////////////////DISEÑO DEL ENCABEZADO Y TITULO*/
 header{
   background: #5b7989;
   width: 100%;
   border-radius: 10px 10px 0px 0px;
+  float: left;
 }
 
-h1{
+header>h1{
+  color: white;
   text-align:left;
-  text-shadow: 1px 1px 2px #02010a;
+  text-shadow: 2px 2px 2px #02010a;
+  padding: 5px;
+  float: left;
+  font-family: 'Dancing Script', cursive;
 }
-
-nav{
+/*//////////////////////////DISEÑO DEL NAVBAR*/
+#navbar{
   width: 100%;
   text-align: right;
+  position:relative;
+  padding-top:40px;
+  font-family: 'Dancing Script', cursive;
+  color:white;
 }
 
-.caja1{
+nav>.sinsubrayar:link{
+  text-decoration:none;
+}
+nav>a{
+  color: white;
+}
+/*/////////////////////////DISEÑO DE LA IMG CENTRAL*/
+#imgcentral{
   width: 100%;
-  display:block;
-  clear:both;
+  text-align: center;
 }
-
-.cajaimgs{
-  display: flex;
-  flex-direction:row;
-  flex-wrap: nowrap;
-}
-
-.caja2{
-  background: #d5c75f;
-  width: 100%;
-  display:block;
-  float: left;
-
-}
-
-.caja3{
-  background: #d5c75f;
-  width: 100%;
-  display:block;
-  float: right;
-
+#imgcentral>img{
+  background: white;
+  border: 20px solid #82c3a6;
+  padding: 10px;
+  width: auto;
 }
