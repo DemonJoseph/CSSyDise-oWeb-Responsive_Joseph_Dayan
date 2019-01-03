@@ -1,8 +1,17 @@
+
 /*/////////////////////////////TIPO DE LETRA PARA EL PROYECTO*/
 @font-face {
   font-family: 'Dancing Script', cursive;
 }
-
+/*//////////////////////////////FONDO NEGRO, DEL BODY y DEL CONTENEDOR PRINCIPAL LLAMADO CONTENIDO*/
+#body,#contenido{
+  background: #02010a;
+  width: auto;
+}
+header>p{
+  color: white;
+  clear: both;
+}
 /*/////////////////////////////DISEÑO DEL ENCABEZADO Y TITULO*/
 header{
   background: #5b7989;
@@ -13,17 +22,14 @@ header{
 
 header>h1{
   color: white;
-  text-align:left;
   text-shadow: 2px 2px 2px #02010a;
   padding: 5px;
-  float: left;
   font-family: 'Dancing Script', cursive;
+  float: left;;
 }
 /*//////////////////////////DISEÑO DEL NAVBAR*/
 #navbar{
-  width: 100%;
-  text-align: right;
-  position:relative;
+  float: right;
   padding-top:40px;
   font-family: 'Dancing Script', cursive;
   color:white;
@@ -39,10 +45,33 @@ nav>a{
 #imgcentral{
   width: 100%;
   text-align: center;
+  background: #82c3a6;
+  float: left;
 }
 #imgcentral>img{
-  background: white;
-  border: 20px solid #82c3a6;
-  padding: 10px;
-  width: auto;
+  box-shadow: 2px 2px 2px 2px #02010a;
+  /* width: auto; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+/*/////////////////////////DISEÑO DE LA IMG SECUNDARIA*/
+#imgsecundaria{
+  width: 100%;
+  text-align: center;
+  background: #d5c75f;
+  float: left;
+}
+#imgsecundaria>img{
+  box-shadow: 2px 2px 2px 2px #02010a;
+  width: 40%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*//////////////////////////////////FOOTER*/
+footer{
+  background: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  clear: both;
 }
