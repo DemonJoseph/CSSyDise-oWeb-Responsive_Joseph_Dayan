@@ -71,7 +71,9 @@ nav>a{
 
 /*//////////////////////////////////FOOTER*/
 footer{
+  font-family: 'Dancing Script', cursive;
   background: #C6d5c5;
   border-radius: 0px 0px 10px 10px;
   clear: both;
+  padding: 10px;
 }
