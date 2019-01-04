@@ -1,82 +1,116 @@
-
 /*/////////////////////////////TIPO DE LETRA PARA EL PROYECTO*/
 @font-face {
   font-family: 'Dancing Script', cursive;
+  src: url(fonts/DancingScript-Regular.ttf);
 }
+
 /*//////////////////////////////FONDO NEGRO, DEL BODY y DEL CONTENEDOR PRINCIPAL LLAMADO CONTENIDO*/
-#body,#contenido{
+#body, #contenido {
   background: #02010a;
-  width: auto;
+  width: 100%;
+  min-width: 220px;
+  font-family: 'Dancing Script', cursive;
+  margin-left: auto;
+  margin-right: auto;
 }
-header>p{
-  color: white;
-  clear: both;
-}
+
 /*/////////////////////////////DISEÑO DEL ENCABEZADO Y TITULO*/
-header{
+header {
   background: #5b7989;
   width: 100%;
   border-radius: 10px 10px 0px 0px;
   float: left;
 }
 
-header>h1{
+header>h1 {
   color: white;
   text-shadow: 2px 2px 2px #02010a;
-  padding: 5px;
-  font-family: 'Dancing Script', cursive;
-  float: left;;
-}
-/*//////////////////////////DISEÑO DEL NAVBAR*/
-#navbar{
-  float: right;
-  padding-top:40px;
-  font-family: 'Dancing Script', cursive;
-  color:white;
+  margin-left: 30px;
+  float: left;
+  font-weight: bold;
+  font-size: 2.2em;
 }
 
-nav>.sinsubrayar:link{
-  text-decoration:none;
+/*//////////////////////////DISEÑO DEL NAVBAR*/
+#navbar {
+  float: right;
+  margin-top: 0px;
 }
-nav>a{
+
+nav>.sinsubrayar:link {
+  text-decoration: none;
+}
+
+nav>a {
   color: white;
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-right: 20px;
 }
+
 /*/////////////////////////DISEÑO DE LA IMG CENTRAL*/
-#imgcentral{
+#imgcentral {
   width: 100%;
   text-align: center;
   background: #82c3a6;
   float: left;
 }
-#imgcentral>img{
+
+#imgcentral>picture>img {
   box-shadow: 2px 2px 2px 2px #02010a;
   /* width: auto; */
   margin-top: 20px;
   margin-bottom: 20px;
   width: 80%;
 }
+
 /*/////////////////////////DISEÑO DE LA IMG SECUNDARIA*/
-#imgsecundaria{
+#imgsecundaria {
   width: 100%;
   text-align: center;
   background: #d5c75f;
   float: left;
 }
-#imgsecundaria>img{
+
+#imgsecundaria>img {
   box-shadow: 2px 2px 2px 2px #02010a;
   width: 40%;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
+/*//////////////////////////////////MEDIA QUERIES - FORMATO PARA MOVIL//*/
+@media screen and (min-width:690px) {
+  #contenido {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #navbar {
+    margin-top: 30px;
+  }
+}
+
+/*//////////////////////////////////MEDIA QUERIES - FORMATO PARA DESKTOP//*/
+@media screen and (min-width:900px) {
+  #contenido {
+    width: 900px;
+  }
+
+  #navbar {
+    margin-top: 30px;
+  }
+
+  header>h1 {}
+}
+
 /*//////////////////////////////////FOOTER*/
-footer{
-  font-family: 'Dancing Script', cursive;
+footer {
   background: #C6d5c5;
   border-radius: 0px 0px 10px 10px;
   clear: both;
   padding: 10px;
 }
-footer>article>img{
 
-}
+footer>article>img {}
