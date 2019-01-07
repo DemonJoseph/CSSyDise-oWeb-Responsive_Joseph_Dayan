@@ -8,7 +8,7 @@
 #body, #contenido {
   background: #02010a;
   width: 100%;
-  min-width: 220px;
+  min-width: 300px;
   font-family: 'Dancing Script', cursive;
   margin-left: auto;
   margin-right: auto;
@@ -34,7 +34,7 @@ header>h1 {
 /*//////////////////////////DISEÑO DEL NAVBAR*/
 #navbar {
   float: right;
-  margin-top: 0px;
+  margin-bottom: 5px;
 }
 
 nav>.sinsubrayar:link {
@@ -57,7 +57,7 @@ nav>a {
 }
 
 #imgcentral>picture>img {
-  box-shadow: 2px 2px 2px 2px #02010a;
+  box-shadow: 2px 2px 2px 0px #02010a;
   /* width: auto; */
   margin-top: 20px;
   margin-bottom: 20px;
@@ -71,12 +71,26 @@ nav>a {
   background: #d5c75f;
   float: left;
 }
-
-#imgsecundaria>img {
-  box-shadow: 2px 2px 2px 2px #02010a;
-  width: 40%;
-  margin-top: 20px;
+#imgsecundaria>a{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 1.2em;
   margin-bottom: 20px;
+}
+#imgsecundaria>a>picture {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+#imgsecundaria>a>picture>img {
+  box-shadow: 2px 2px 2px 0px #02010a;
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
 }
 
 /*//////////////////////////////////MEDIA QUERIES - FORMATO PARA MOVIL//*/
@@ -90,6 +104,25 @@ nav>a {
   #navbar {
     margin-top: 30px;
   }
+
+  #imgsecundaria {
+    width: 100%;
+    text-align: center;
+    background: #d5c75f;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer>section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /*//////////////////////////////////MEDIA QUERIES - FORMATO PARA DESKTOP//*/
@@ -102,7 +135,25 @@ nav>a {
     margin-top: 30px;
   }
 
-  header>h1 {}
+  #imgsecundaria {
+    width: 100%;
+    text-align: center;
+    background: #d5c75f;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer>section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /*//////////////////////////////////FOOTER*/
@@ -113,4 +164,23 @@ footer {
   padding: 10px;
 }
 
-footer>article>img {}
+footer>section>article{
+  margin-right: 30px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  text-align: justify;
+}
+footer>section>article>h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+footer>section>article>p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+footer>section>article>a {
+  color: black;
+}
+.redessociales>a:link {
+  text-decoration: none;
+}
