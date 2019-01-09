@@ -25,16 +25,18 @@ header {
 header>h1 {
   color: white;
   text-shadow: 2px 2px 2px #02010a;
-  margin-left: 30px;
+  width: 100%;
+  text-align: center;
   float: left;
-  font-weight: bold;
   font-size: 2.2em;
 }
 
 /*//////////////////////////DISEÑO DEL NAVBAR*/
 #navbar {
   float: right;
-  margin-bottom: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 nav>.sinsubrayar:link {
@@ -44,9 +46,11 @@ nav>.sinsubrayar:link {
 nav>a {
   color: white;
   font-weight: bold;
-  font-size: 1.4em;
-  margin-right: 20px;
+  font-size: 1.5em;
+  margin-left: 20px;
+  letter-spacing: 1px;
 }
+
 
 /*/////////////////////////DISEÑO DE LA IMG CENTRAL*/
 #imgcentral {
@@ -71,26 +75,63 @@ nav>a {
   background: #d5c75f;
   float: left;
 }
-#imgsecundaria>a{
+
+#imgsecundaria>a {
   margin-left: auto;
   margin-right: auto;
   display: block;
   font-size: 1.2em;
   margin-bottom: 20px;
 }
+
 #imgsecundaria>a>picture {
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
+
 #imgsecundaria>a>picture>img {
   box-shadow: 2px 2px 2px 0px #02010a;
   width: 80%;
-  margin-top: 20px;
+  margin-top: 25px;
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid black;
+}
+/*/////////////////////////////EFECTO DE ANIMACION+ROTACION/////////*/
+#imgsecundaria>a>picture>.imgizq:hover {
+  animation: rotateimgizq 3s infinite;
+}
+@-webkit-keyframes rotateimgizq{
+  from {
+    transform: rotate(0deg);
+    border: 2px;
+    box-shadow: 2px 2px 2px 1px #82c3a6;
+  }
+
+  to {
+    transform: rotate(10deg);
+    border: 2px;
+    box-shadow: 2px 2px 2px 1px #82c3a6;
+  }
+}
+/*/////////////////////////////EFECTO DE ANIMACION+TRANSLACION/////////*/
+#imgsecundaria>a>picture>.imgder:hover {
+  animation: translateimgder 0.5s;
+}
+@-webkit-keyframes translateimgder{
+  from {
+    transform: translate(0px,0px);
+    border: 2px;
+    box-shadow: 2px 2px 2px 1px #82c3a6;
+  }
+
+  to {
+    transform: translate(20px,-5px);
+    border: 2px;
+    box-shadow: 2px 2px 2px 1px #82c3a6;
+  }
 }
 
 /*//////////////////////////////////MEDIA QUERIES - FORMATO PARA MOVIL//*/
@@ -101,9 +142,20 @@ nav>a {
     margin-right: auto;
   }
 
-  #navbar {
-    margin-top: 30px;
-  }
+  /* header>h1 {
+    color: white;
+    text-shadow: 2px 2px 2px #02010a;
+    width: 50%;
+    text-align: center;
+    float: left;
+    font-size: 2.2em;
+  } */
+   #navbar{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
 
   #imgsecundaria {
     width: 100%;
@@ -116,15 +168,25 @@ nav>a {
     margin-left: auto;
     margin-right: auto;
   }
+
   footer>section {
     display: flex;
     flex-direction: row;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
   }
 }
-
+/*//////////////////////////////////MEDIA QUERIES - FORMATO PARA TABLET//*/
+@media screen and (min-width:691px) and (max-width:890px){
+  #navbar {
+    float: right;
+    width: 40%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
 /*//////////////////////////////////MEDIA QUERIES - FORMATO PARA DESKTOP//*/
 @media screen and (min-width:900px) {
   #contenido {
@@ -132,9 +194,20 @@ nav>a {
   }
 
   #navbar {
-    margin-top: 30px;
+    float: right;
+    width: 40%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
   }
-
+  header>h1 {
+    color: white;
+    text-shadow: 2px 2px 2px #02010a;
+    width: 50%;
+    text-align: center;
+    float: left;
+    font-size: 2.2em;
+  }
   #imgsecundaria {
     width: 100%;
     text-align: center;
@@ -142,7 +215,7 @@ nav>a {
     float: left;
     display: flex;
     flex-direction: row;
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
     margin-left: auto;
     margin-right: auto;
   }
@@ -150,7 +223,7 @@ nav>a {
   footer>section {
     display: flex;
     flex-direction: row;
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
     margin-left: auto;
     margin-right: auto;
   }
@@ -164,23 +237,27 @@ footer {
   padding: 10px;
 }
 
-footer>section>article{
+footer>section>article {
   margin-right: 30px;
   margin-left: 20px;
   margin-bottom: 40px;
   text-align: justify;
 }
+
 footer>section>article>h1 {
   font-size: 2em;
   margin-bottom: 5px;
 }
+
 footer>section>article>p {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
 footer>section>article>a {
   color: black;
 }
+
 .redessociales>a:link {
   text-decoration: none;
 }
