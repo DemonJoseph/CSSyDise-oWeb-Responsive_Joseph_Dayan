@@ -135,7 +135,7 @@ nav>a {
 }
 
 /*//////////////////////////////////MEDIA QUERIES - FORMATO PARA MOVIL//*/
-@media screen and (min-width:690px) {
+@media screen and (max-width:640px) {
   #contenido {
     width: 100%;
     margin-left: auto;
@@ -178,11 +178,11 @@ nav>a {
   }
 }
 /*//////////////////////////////////MEDIA QUERIES - FORMATO PARA TABLET//*/
-@media screen and (min-width:691px) and (max-width:890px){
+@media screen and (max-width:899px) and (min-width:640px) {
   #navbar {
     float: right;
-    width: 40%;
-    margin-top: 30px;
+    width: 100%;
+    margin-top: 0px;
     margin-bottom: 20px;
     text-align: center;
   }
