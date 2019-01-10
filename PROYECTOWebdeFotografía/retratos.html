@@ -1,50 +1,132 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,user-scalable=no">
-<link rel="stylesheet" href="css/estilos.css">
-<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-<title>Comenzando con la fotografía</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=no">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+  <title>Retratos</title>
 </head>
 
-<body>
-  <header>
-    <h1>Comenzando con la fotografía</h1>
-    <nav id=navbar>
-      <a href="index.html">Index</a>
-      <a href="paisajes.html">Paisajes</a>
-      <a class="sinsubrayar" href="retratos.html">Retratos</a>
-    </nav>
-  </header>
+<body id="body">
+  <div id="contenido">
+    <header>
+      <h1>Comenzando con la Fotografía</h1>
+      <nav id=navbar>
+        <a href="index.html">Inicio</a>
+        <a href="paisajes.html">Paisajes</a>
+        <a class="sinsubrayar" href="retratos.html">Retratos</a>
+      </nav>
+      <!-- <p>Diagrama una página principal index.html tomando en cuenta las siguientes especificaciones:</p>
+      <p>Cabecera esta sección debe contener la información del sitio, toma en cuenta lo siguiente:
+        Establece el fondo de color #5b7989.</p>
+      <p>Agrega el Nombre del sitio "Comenzando con la fotografía" ubicado al lado izquierdo,
+      en blanco la letra debe tener una sombra de 2px de color #02010a.
+        Aplica bordes redondeados en las esquinas superiores a 10px.</p>
+      <p>Desarrolla un menú, para la versión desktop, a la derecha con enlaceas a tres páginas:
+      Inicio, Paisajes, Retratos. La página actual debe tener estilo sin subrayado.</p>
+    <p>Sigue las instrucciones anteriores para la cabecera agrega el título de la
+    página (paisajes o retratos) y actualiza los cambios de estilo de la página a actual en el menú.</p>-->
+    </header>
 
+    <section id="galeria">
 
-  <section>
-<p>Diagrama las páginas "paisajes.html" y "retratos.html" tomando en cuenta las siguientes especificaciones:
+      <picture class="img1">
+        <source media="(min-width: 900px)" srcset="imagen/retrato.jpg">
+        <source media="(min-width: 460px)" srcset="imagen/retrato.jpg">
+          <img src="imagen/retrato.jpg" alt="retrato">
+      </picture>
 
-Sigue las instrucciones anteriores para la cabecera agrega el título de la página (paisajes o retratos) y actualiza los cambios de estilo de la página a actual en el menú.
-Para la sección de la galería selecciona al menos una imagen de tu preferencia sobre paisajes o retratos según sea el caso.
-La galería debe mostraste en tres columnas para desktop y en una para móvil, sigue las siguientes consideraciones para los efectos de las imágenes:
-Para la imagen 1, aplica el efecto blur de 10px.
-Para las imágenes 2,4,6 (pares) aplica escala de grises al 100%.
-Para la imagen 3, aplica el efecto sepia de 90%.
-Pie de página en esta sección debes ubicar información de contacto, términos, redes sociales, y derechos, aplica las siguientes consideraciones:
-Aplica bordes redondeados en las esquinas inferiores a 10px.
-El pie debe estar a cuatro columnas en desktop y una columna en móvil.
-Aplica el color de fondo #C6d5c5.
-La columna de contacto debe contener un correo electrónico, una dirección física y un número telefónico.
-En la columna de término agrega una frase corta referente a las políticas.
-En la columna de Redes Sociales, agrega tres de tu preferencia.
-En la columna de Derechos agrega tu nombre, apellido, el símbolo de CopyRight y el año actual.</p>
-  </section>
+      <picture class="img2">
+        <source media="(min-width: 900px)" srcset="imagen/retrato.jpg">
+        <source media="(min-width: 460px)" srcset="imagen/retrato.jpg">
+          <img src="imagen/retrato.jpg" alt="retrato">
+      </picture>
 
-  <article>
+      <picture class="img3">
+        <source media="(min-width: 900px)" srcset="imagen/retrato.jpg">
+        <source media="(min-width: 460px)" srcset="imagen/retrato.jpg">
+          <img src="imagen/retrato.jpg" alt="retrato">
+      </picture>
 
-  </article>
+      <picture class="img4">
+        <source media="(min-width: 900px)" srcset="imagen/retrato.jpg">
+        <source media="(min-width: 460px)" srcset="imagen/retrato.jpg">
+          <img src="imagen/retrato.jpg" alt="retrato">
+      </picture>
 
-  <footer>
+      <picture class="img5">
+        <source media="(min-width: 900px)" srcset="imagen/retrato.jpg">
+        <source media="(min-width: 460px)" srcset="imagen/retrato.jpg">
+          <img src="imagen/retrato.jpg" alt="retrato">
+      </picture>
 
-  </footer>
+      <picture class="img6">
+        <source media="(min-width: 900px)" srcset="imagen/retrato.jpg">
+        <source media="(min-width: 460px)" srcset="imagen/retrato.jpg">
+        <img src="imagen/retrato.jpg" alt="retrato">
+      </picture>
 
+      <!-- <p>Diagrama las páginas "paisajes.html" y "retratos.html" tomando en
+      cuenta las siguientes especificaciones:</p>
+
+      <p>Sigue las instrucciones anteriores para la cabecera agrega el título de
+      la página (paisajes o retratos) y actualiza los cambios de estilo de la
+      página a actual en el menú.
+      </p>
+      <p>Para la sección de la galería selecciona al menos una imagen de tu
+      preferencia sobre paisajes o retratos según sea el caso.
+      </p>
+      <p>La galería debe mostraste en tres columnas para desktop y en una para
+      móvil, sigue las siguientes consideraciones para los efectos de las imágenes:
+        Para la imagen 1, aplica el efecto blur de 10px.</p>
+      <p>Para las imágenes 2,4,6 (pares) aplica escala de grises al 100%.</p>
+      <p>Para la imagen 3, aplica el efecto sepia de 90%.</p> -->
+    </section>
+
+    <footer id="footer">
+      <section id="artfooter">
+
+        <article class="contacto">
+          <h1>Contactos</h1>
+          <a href="mailto:jdayan9@gmail.com">jdayan9@gmail.com</a>
+          <p>Calle 5 con 3</p>
+          <p>Teléfono: 123123123</p>
+        </article>
+
+        <article class="terminos">
+          <h1>Términos</h1>
+          <p>Conoce nuestros términos y condiciones....Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Ut quis augue libero. Mauris sagittis
+            mauris ultrices, ullamcorper nulla at, suscipit lorem.</p>
+        </article>
+
+        <article class="redessociales">
+          <h1>Redes Sociales</h1>
+          <p>Comparte en nuestras redes sociales</p>
+          <a href="https://www.facebook.com" target="_blank"> <img src="imagen/logofb.png" alt="logofb" width=20> Comenzando Fotografía</a><br>
+          <a href="https://www.instagram.com" target="_blank"> <img src="imagen/logoinsta.png" alt="logoinsta" width=20> Comenzando Fotografía</a><br>
+          <a href="https://www.twitter.com" target="_blank"> <img src="Imagen/logot.png" alt="logotwitter" width=20> Comenzando Fotografía</a>
+        </article>
+
+        <article class="derechos">
+          <h1>Derechos</h1>
+          <p>Joseph Dayan E.</p>
+          <p>©CopyRight - 2019</p>
+        </article>
+
+      </section>
+      <!-- <p>Pie de página en esta sección debes ubicar información de contacto, términos, redes sociales, y derechos, aplica las siguientes consideraciones:
+        Aplica bordes redondeados en las esquinas inferiores a 10px.
+        El pie debe estar a cuatro columnas en desktop y una columna en móvil.
+        Aplica el color de fondo #C6d5c5.
+        La columna de contacto debe contener un correo electrónico, una dirección física y un número telefónico.
+        En la columna de término agrega una frase corta referente a las políticas.
+        En la columna de Redes Sociales, agrega tres de tu preferencia.
+        En la columna de Derechos agrega tu nombre, apellido, el símbolo de CopyRight y el año actual.</p> -->
+    </footer>
+  </div>
 </body>
+
 </html>

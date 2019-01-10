@@ -5,6 +5,12 @@
 }
 
 /*//////////////////////////////FONDO NEGRO, DEL BODY y DEL CONTENEDOR PRINCIPAL LLAMADO CONTENIDO*/
+/*A continuación te presentamos dos videos para que tengas una guía de cómo debe lucir tu proyecto,
+ten en cuenta las siguientes consideraciones:
+Solo para la versión móvil muestra centrado el menú y debajo del título.
+Para ambas versiones el header debe tener una animación de slidein
+(debe venir de abajo hacia arriba y rebotar) está animación debe hacerse variando el
+margin-top de 150% a -5% y luego a 0%, en los momentos 0%, 60% y 100% respectivamente.*/
 #body, #contenido {
   background: #02010a;
   width: 100%;
@@ -12,8 +18,14 @@
   font-family: 'Dancing Script', cursive;
   margin-left: auto;
   margin-right: auto;
+  animation-duration: 2s;
+  animation-name: slidein;
 }
-
+@keyframes slidein {
+  0%{margin-top: 150%;  }
+  60%{margin-top: -5%; }
+  100%{margin-top: 0%;}
+}
 /*/////////////////////////////DISEÑO DEL ENCABEZADO Y TITULO*/
 header {
   background: #5b7989;
@@ -122,18 +134,21 @@ nav>a {
 }
 
 /*///////////////////////EFECTOS DE LA GALERIA////////*/
-.img1{
-  -webkit-filter:blur(10px);
+.img1 {
+  -webkit-filter: blur(10px);
   filter: blur(10px);
 }
-.img2,.img4,.img6{
-  -webkit-filter:grayscale(100%);
+
+.img2, .img4, .img6 {
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-.img3{
-  -webkit-filter:sepia(90%);
+
+.img3 {
+  -webkit-filter: sepia(90%);
   filter: sepia(90%);
 }
+
 /*//////////////////////////////////FOOTER/////////////////////////////*/
 footer {
   width: 100%;
@@ -218,6 +233,7 @@ footer>section>article>a {
     border: 2px;
     box-shadow: 2px 2px 2px 1px #82c3a6;
   }
+
 }
 
 /*//////////////////////////////////MEDIA QUERIES - FORMATO PARA MOVIL//*/
@@ -293,7 +309,6 @@ footer>section>article>a {
     margin-left: 30px;
     margin-bottom: 40px;
   }
-
 }
 
 /*//////////////////////////////////MEDIA QUERIES - FORMATO PARA TABLET//*/
@@ -410,7 +425,6 @@ footer>section>article>a {
     margin: 20px 10px 20px 10px;
     width: 90%;
   }
-
 
   footer {
     width: 100%;
